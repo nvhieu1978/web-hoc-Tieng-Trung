@@ -9,7 +9,7 @@
 }
 
 .container:hover {
-  box-shadow: 0 12px 32px rgba(201, 59, 43, 0.12);
+  box-shadow: 0 12px 32px rgba(185, 28, 28, 0.12);
   border-color: var(--ifm-color-primary-light);
 }
 
@@ -26,7 +26,7 @@
 }
 
 .badgeLesson {
-  background: linear-gradient(135deg, #c93b2b, #b31916);
+  background: linear-gradient(135deg, #b91c1c, #991b1b);
   color: #fff;
   font-weight: 700;
   font-size: 0.82rem;
@@ -45,8 +45,8 @@
 }
 
 .badgeAuthor {
-  background: rgba(11, 90, 42, 0.12);
-  color: #0b5a2a;
+  background: rgba(5, 150, 105, 0.12);
+  color: #059669;
   font-size: 0.82rem;
   font-weight: 600;
   padding: 4px 10px;
@@ -54,13 +54,13 @@
 }
 
 html[data-theme='dark'] .badgeAuthor {
-  background: rgba(11, 90, 42, 0.35);
-  color: #5cdb95;
+  background: rgba(5, 150, 105, 0.3);
+  color: #34d399;
 }
 
 .badgeCategory {
-  background: rgba(226, 173, 40, 0.15);
-  color: #8a6414;
+  background: rgba(217, 119, 6, 0.15);
+  color: #b45309;
   font-size: 0.82rem;
   font-weight: 600;
   padding: 4px 10px;
@@ -68,8 +68,8 @@ html[data-theme='dark'] .badgeAuthor {
 }
 
 html[data-theme='dark'] .badgeCategory {
-  background: rgba(226, 173, 40, 0.25);
-  color: #f7d070;
+  background: rgba(217, 119, 6, 0.25);
+  color: #fbbf24;
 }
 
 .title {
@@ -99,7 +99,6 @@ html[data-theme='dark'] .badgeCategory {
   color: var(--ifm-color-emphasis-800);
   padding: 2px 8px;
   border-radius: 6px;
-  font-family: inherit;
 }
 
 .highlightsBox {
@@ -131,19 +130,41 @@ html[data-theme='dark'] .badgeCategory {
 .actionButtons {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
   align-items: center;
 }
 
 .btnPrimary {
+  background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%) !important;
+  border-color: #b91c1c !important;
+  color: #ffffff !important;
   font-weight: 700;
-  box-shadow: 0 4px 14px rgba(201, 59, 43, 0.25);
+  box-shadow: 0 4px 14px rgba(185, 28, 28, 0.25);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .btnPrimary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(201, 59, 43, 0.35);
+  box-shadow: 0 6px 18px rgba(185, 28, 28, 0.35);
+}
+
+.btnPopup {
+  background: #f3f4f6 !important;
+  color: #1f2937 !important;
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+
+html[data-theme='dark'] .btnPopup {
+  background: #1f2937 !important;
+  color: #f3f4f6 !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.btnPopup:hover {
+  transform: translateY(-2px);
+  border-color: #b91c1c !important;
 }
 
 .btnAction {
@@ -155,29 +176,65 @@ html[data-theme='dark'] .badgeCategory {
   transform: translateY(-1px);
 }
 
-.iframeWrapper {
-  margin-top: 24px;
+.btnToggle {
+  font-size: 0.85rem;
+  color: #6b7280 !important;
+  text-decoration: underline;
+  padding: 4px 8px;
+}
+
+.securityNoticeBox {
+  margin-top: 18px;
   border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid var(--ifm-color-emphasis-300);
-  background: #f8fafc;
+  padding: 16px 20px;
+  background: rgba(217, 119, 6, 0.08);
+  border: 1px solid rgba(217, 119, 6, 0.25);
 }
 
-html[data-theme='dark'] .iframeWrapper {
-  background: #1e1e24;
+html[data-theme='dark'] .securityNoticeBox {
+  background: rgba(251, 191, 36, 0.08);
+  border-color: rgba(251, 191, 36, 0.2);
 }
 
-.iframeNotice {
-  padding: 10px 16px;
-  font-size: 0.88rem;
-  background: rgba(226, 173, 40, 0.15);
+.noticeHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #b45309;
+  font-size: 0.98rem;
+  margin-bottom: 8px;
+}
+
+html[data-theme='dark'] .noticeHeader {
+  color: #fbbf24;
+}
+
+.noticeText {
+  font-size: 0.9rem;
+  line-height: 1.55;
   color: var(--ifm-font-color-base);
-  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  margin-bottom: 8px;
+}
+
+.noticeText code {
+  background: rgba(0, 0, 0, 0.06);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.noticeActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+  align-items: center;
 }
 
 .iframe {
   width: 100%;
-  height: 650px;
-  border: none;
+  height: 600px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
   display: block;
+  background: #ffffff;
 }

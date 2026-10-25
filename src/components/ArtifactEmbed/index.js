@@ -10,15 +10,32 @@ export default function ArtifactEmbed({
   tags = [],
   highlights = [],
   description,
-  lessonNumber
+  lessonNumber,
 }) {
-  const [showIframe, setShowIframe] = useState(false);
+  const [showPreviewInfo, setShowPreviewInfo] = useState(false);
+  const [forceIframe, setForceIframe] = useState(false);
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(url);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    if (typeof navigator !== 'undefined' && navigator.clipboard) {
+      navigator.clipboard.writeText(url);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
+
+  const handleOpenPopup = () => {
+    if (typeof window !== 'undefined') {
+      const width = 1100;
+      const height = 850;
+      const left = Math.max(0, (window.screen.width - width) / 2);
+      const top = Math.max(0, (window.screen.height - height) / 2);
+      window.open(
+        url,
+        `artifact_popup_${lessonNumber || 'view'}`,
+        `width=${width},height=${height},top=${top},left=${left},scrollbars=yes,resizable=yes,status=no,location=yes`
+      );
+    }
   };
 
   return (
@@ -26,7 +43,9 @@ export default function ArtifactEmbed({
       <div className={styles.header}>
         <div className={styles.metaRow}>
           {lessonNumber && (
-            <span className={styles.badgeLesson}>Buổi {lessonNumber < 10 ? `0${lessonNumber}` : lessonNumber}</span>
+            <span className={styles.badgeLesson}>
+              Buổi {lessonNumber < 10 ? `0${lessonNumber}` : lessonNumber}
+            </span>
           )}
           {date && <span className={styles.badgeDate}>📅 {date}</span>}
           {author && <span className={styles.badgeAuthor}>👤 {author}</span>}
@@ -38,7 +57,9 @@ export default function ArtifactEmbed({
         {tags.length > 0 && (
           <div className={styles.tagsRow}>
             {tags.map((t, idx) => (
-              <span key={idx} className={styles.tag}>#{t}</span>
+              <span key={idx} className={styles.tag}>
+                #{t}
+              </span>
             ))}
           </div>
         )}
@@ -61,37 +82,93 @@ export default function ArtifactEmbed({
           target="_blank"
           rel="noopener noreferrer"
           className={`button button--primary button--lg ${styles.btnPrimary}`}
+          title="Mở bài giảng nguyên bản trên Claude.ai ở tab mới"
         >
           🚀 Mở Trực Tiếp Trên Claude.ai
         </a>
 
         <button
+          onClick={handleOpenPopup}
+          type="button"
+          className={`button button--secondary button--lg ${styles.btnPopup}`}
+          title="Mở bài giảng trong cửa sổ riêng (không bị chặn iframe)"
+        >
+          🪟 Mở Cửa Sổ Xem Nhanh
+        </button>
+
+        <button
           onClick={handleCopy}
-          className={`button button--secondary ${styles.btnAction}`}
+          type="button"
+          className={`button button--outline button--secondary ${styles.btnAction}`}
         >
           {copied ? '✅ Đã chép link!' : '📋 Sao chép link'}
         </button>
 
         <button
-          onClick={() => setShowIframe(!showIframe)}
-          className={`button button--outline button--primary ${styles.btnAction}`}
+          onClick={() => setShowPreviewInfo(!showPreviewInfo)}
+          type="button"
+          className={`button button--link ${styles.btnToggle}`}
         >
-          {showIframe ? '🔼 Thu gọn xem thử' : '👁️ Bật xem thử trong trang'}
+          {showPreviewInfo ? '🔼 Thu gọn hướng dẫn nhúng' : '❓ Tại sao không nhúng trực tiếp được?'}
         </button>
       </div>
 
-      {showIframe && (
-        <div className={styles.iframeWrapper}>
-          <div className={styles.iframeNotice}>
-            💡 <em>Nếu trình duyệt chặn nhúng hoặc yêu cầu đăng nhập Claude, bạn hãy bấm nút <strong>"Mở Trực Tiếp Trên Claude.ai"</strong> ở trên để học với trải nghiệm tốt nhất nhé!</em>
+      {showPreviewInfo && (
+        <div className={styles.securityNoticeBox}>
+          <div className={styles.noticeHeader}>
+            <span style={{ fontSize: '1.25rem' }}>🛡️</span>
+            <strong>Vì sao Claude.ai không hiển thị lồng trực tiếp trong thẻ iframe?</strong>
           </div>
-          <iframe
-            src={url}
-            title={title}
-            className={styles.iframe}
-            sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
-            loading="lazy"
-          />
+          <p className={styles.noticeText}>
+            Claude.ai (Anthropic) thiết lập chính sách bảo mật máy chủ nghiêm ngặt{' '}
+            <code>X-Frame-Options: SAMEORIGIN</code> và <code>Content-Security-Policy</code> để chống
+            tấn công Clickjacking (đánh cắp thao tác click của người dùng).
+          </p>
+          <p className={styles.noticeText}>
+            Do đó, tất cả trình duyệt hiện đại (Chrome, Edge, Brave, Safari, Firefox) sẽ{' '}
+            <strong>từ chối tải Claude.ai lồng bên trong iframe</strong> của bất kỳ website thứ ba nào
+            (kể cả localhost hay Vercel).
+          </p>
+          <div className={styles.noticeActions}>
+            <button
+              onClick={handleOpenPopup}
+              className="button button--primary button--sm"
+              type="button"
+            >
+              🪟 Dùng Cửa Sổ Popup Riêng
+            </button>
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button button--secondary button--sm"
+            >
+              🚀 Mở Tab Mới ↗
+            </a>
+            <button
+              onClick={() => setForceIframe(!forceIframe)}
+              className="button button--outline button--secondary button--sm"
+              type="button"
+              style={{ fontSize: '0.78rem' }}
+            >
+              {forceIframe ? 'Ẩn khung iframe' : 'Vẫn muốn thử tải iframe'}
+            </button>
+          </div>
+
+          {forceIframe && (
+            <div style={{ marginTop: '14px', borderTop: '1px dashed #cbd5e1', paddingTop: '12px' }}>
+              <div style={{ fontSize: '0.82rem', color: '#64748b', marginBottom: '8px' }}>
+                <em>Khung iframe tải từ {url}:</em>
+              </div>
+              <iframe
+                src={url}
+                title={title}
+                className={styles.iframe}
+                sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+                loading="lazy"
+              />
+            </div>
+          )}
         </div>
       )}
     </div>
