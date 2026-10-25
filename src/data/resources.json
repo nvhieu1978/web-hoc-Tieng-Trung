@@ -1,0 +1,60 @@
+[
+  {
+    "id": "tool-drive",
+    "title": "Thư mục Google Drive Học Tập",
+    "sender": "Nguyễn Hà Nhiên",
+    "date": "2026-10-08",
+    "displayDate": "08/10/2026",
+    "url": "https://drive.google.com/drive/folders/1yjQMxQlCPsm-2W-N1D743mrFfIfQRGz9?usp=sharing",
+    "docSlug": "/docs/cong-cu/tai-lieu-drive",
+    "badge": "Kho Đám Mây",
+    "icon": "☁️",
+    "category": "Tài liệu",
+    "description": "Kho lưu trữ toàn bộ file audio giọng cô đọc mẫu, slide bài giảng từng buổi học, sách giáo trình và tài liệu PDF thực hành.",
+    "features": [
+      "File ghi âm bài giảng đầy đủ",
+      "Slide bài giảng dạng PDF / PPTX",
+      "Sách bài tập và bảng phiên âm bổ trợ"
+    ]
+  },
+  {
+    "id": "tool-pinyin-chart",
+    "title": "Bảng Ghép Pinyin Tương Tác",
+    "sender": "Kỳ Diệu Hán Ngữ",
+    "date": "2026-10-24",
+    "displayDate": "24/10/2026",
+    "url": "https://heran9895-afk.github.io/tiengtrungdieuky/bang-ghep-pinyin-tieng-Trung.html",
+    "localUrl": "/tools/bang-ghep-pinyin-tieng-Trung.html",
+    "docSlug": "/docs/cong-cu/bang-ghep-pinyin",
+    "badge": "Công Cụ Vàng",
+    "icon": "🀄",
+    "category": "Tra cứu Pinyin",
+    "description": "Bảng ma trận trực quan kết hợp giữa tất cả Thanh mẫu và Vận mẫu trong tiếng Trung Quốc, bấm vào từng âm để nghe và xem cách phát âm chuẩn.",
+    "features": [
+      "Ma trận 21 thanh mẫu x 36 vận mẫu",
+      "Đánh dấu các âm hợp lệ trong tiếng Hán chuẩn",
+      "Âm thanh phát âm mẫu chất lượng cao",
+      "Chế độ học offline & online mượt mà"
+    ]
+  },
+  {
+    "id": "tool-nhap-mon",
+    "title": "Cẩm Nang Nhập Môn Tiếng Trung",
+    "sender": "Kỳ Diệu Hán Ngữ",
+    "date": "2026-10-24",
+    "displayDate": "24/10/2026",
+    "url": "https://heran9895-afk.github.io/tiengtrungdieuky/nhap-mon-tieng-Trung.html",
+    "localUrl": "/tools/nhap-mon-tieng-Trung.html",
+    "docSlug": "/docs/cong-cu/nhap-mon-tieng-trung",
+    "badge": "Cẩm Nang Toàn Diện",
+    "icon": "📖",
+    "category": "Nhập môn",
+    "description": "Hệ thống lý thuyết và phương pháp học phát âm tiếng Trung: Phân loại âm môi, âm lưỡi, âm cuống họng, thanh điệu, quy tắc biến âm và bài tập tương tác.",
+    "features": [
+      "Khẩu hình miệng và luồng hơi trực quan",
+      "4 thanh điệu và quy tắc đánh dấu thanh điệu",
+      "Bảng chữ cái Pinyin có kèm font chuẩn LXGW WenKai",
+      "Tích hợp công cụ tự luyện tập tương tác"
+    ]
+  }
+]

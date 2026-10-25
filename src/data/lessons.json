@@ -1,0 +1,193 @@
+[
+  {
+    "id": "buoi-01",
+    "lessonNumber": 1,
+    "title": "Biên bản buổi học tiếng Trung 02/10/2026",
+    "date": "2026-10-02",
+    "displayDate": "02/10/2026",
+    "sender": "Cát Vũ",
+    "url": "https://claude.ai/artifact/3u9e6d6dqksiTfw7wjfTLD",
+    "docSlug": "/docs/bai-hoc/buoi-01-2026-10-02",
+    "type": "artifact",
+    "category": "Ngữ âm & Nhập môn",
+    "tags": ["Khởi động", "Thanh điệu", "Ngữ âm căn bản"],
+    "description": "Biên bản buổi học mở đầu lộ trình: Giới thiệu hệ thống ngữ âm tiếng Hán, 4 thanh điệu cốt lõi, thanh mẫu và vận mẫu nhập môn.",
+    "highlights": [
+      "Tổng quan lộ trình học tiếng Trung",
+      "Khái niệm Pinyin (Bính âm Hán ngữ)",
+      "4 thanh điệu cơ bản (thanh 1, 2, 3, 4) và khẩu hình chuẩn"
+    ]
+  },
+  {
+    "id": "buoi-02",
+    "lessonNumber": 2,
+    "title": "Học lại buổi 05/10 – tiếng Trung",
+    "date": "2026-10-05",
+    "displayDate": "05/10/2026",
+    "sender": "Trịnh Thúy Mai",
+    "url": "https://claude.ai/artifact/JPtozhgAvPPLenxHApQ4HD",
+    "docSlug": "/docs/bai-hoc/buoi-02-2026-10-05",
+    "type": "artifact",
+    "category": "Thanh mẫu & Ghép âm",
+    "tags": ["Thanh mẫu b-p-m-f", "Ghép âm cơ bản", "Luyện phản xạ"],
+    "description": "Ôn tập các nhóm thanh mẫu môi, răng và đầu lưỡi (b, p, m, f, d, t, n, l); luyện tập ghép vần và phân biệt thanh 1 và thanh 4.",
+    "highlights": [
+      "Phân biệt thanh mẫu môi b - p (không bật hơi vs bật hơi)",
+      "Nhóm thanh mẫu đầu lưỡi d - t - n - l",
+      "Bài tập ghép âm thực hành và đọc từ ngữ"
+    ]
+  },
+  {
+    "id": "buoi-03",
+    "lessonNumber": 3,
+    "title": "Học lại buổi 07/10 – tiếng Trung",
+    "date": "2026-10-07",
+    "displayDate": "07/10/2026",
+    "sender": "Cát Vũ",
+    "url": "https://claude.ai/artifact/RTmuhy3aMT9EgmX2diRHLk",
+    "docSlug": "/docs/bai-hoc/buoi-03-2026-10-07",
+    "type": "artifact",
+    "category": "Thanh mẫu & Luyện đọc",
+    "tags": ["Âm cuống lưỡi g-k-h", "Bật hơi", "Bảng từ vựng"],
+    "description": "Luyện tập phát âm nhóm âm cuống lưỡi g, k, h; phân biệt âm bật hơi, bảng ghép âm và mở rộng từ vựng sinh hoạt hàng ngày.",
+    "highlights": [
+      "Kỹ thuật phát âm âm cuống lưỡi g, k, h không mỏi cổ",
+      "Bảng ghép âm nâng cao với các vận mẫu đơn",
+      "Luyện tập ngữ điệu câu đơn giản"
+    ]
+  },
+  {
+    "id": "buoi-04",
+    "lessonNumber": 4,
+    "title": "Học lại buổi 09/10 – Vần i với y, 7 âm đầu lưỡi",
+    "date": "2026-10-09",
+    "displayDate": "09/10/2026",
+    "sender": "Nguyen Hieu",
+    "url": "https://claude.ai/artifact/XhXww6FJhFnmkjoAc7ZZDa",
+    "docSlug": "/docs/bai-hoc/buoi-04-2026-10-09",
+    "type": "artifact",
+    "category": "Vận mẫu & Khẩu hình",
+    "tags": ["Vần i với y", "7 âm đầu lưỡi", "Hình vị trí lưỡi", "Audio cô đọc"],
+    "description": "Vần i viết với y, 7 âm đầu lưỡi (z, c, s, zh, ch, sh, r) kèm hình vị trí đặt lưỡi chuẩn, bảng ghép và hai bảng từ theo slide có giọng cô đọc mẫu.",
+    "highlights": [
+      "Quy tắc khi nào vần i viết thành y (yi, ya, ye, yao...)",
+      "Hình minh họa vị trí đặt lưỡi cho 7 âm đầu lưỡi then chốt",
+      "2 bảng từ thực hành chuẩn theo slide với giọng đọc của cô"
+    ]
+  },
+  {
+    "id": "buoi-05",
+    "lessonNumber": 5,
+    "title": "Bài giảng ngày 12/10",
+    "date": "2026-10-12",
+    "displayDate": "12/10/2026",
+    "sender": "Nguyen Hieu",
+    "url": "https://claude.ai/artifact/BYmMamiuaWWH5ZeuhTnFh2",
+    "docSlug": "/docs/bai-hoc/buoi-05-2026-10-12",
+    "type": "artifact",
+    "category": "Biến điệu & Giao tiếp",
+    "tags": ["Biến điệu thanh 3", "Vận mẫu kép", "Giao tiếp ngắn"],
+    "description": "Tiếp tục hệ thống vận mẫu phức, quy tắc biến điệu hai thanh 3 đi liền nhau (ví dụ: Nǐ hǎo -> Ní hǎo), bài tập phản xạ hội thoại ngắn.",
+    "highlights": [
+      "Quy tắc vàng biến điệu hai thanh 3: 3 + 3 -> 2 + 3",
+      "Luyện phát âm các từ ghép 2 âm tiết",
+      "Chào hỏi và xưng hô cơ bản trong tiếng Trung"
+    ]
+  },
+  {
+    "id": "buoi-06",
+    "lessonNumber": 6,
+    "title": "Bài giảng ngày 14/10 – Họ vần ü & Thơ Tĩnh Dạ Tứ",
+    "date": "2026-10-14",
+    "displayDate": "14/10/2026",
+    "sender": "Nguyen Hieu",
+    "url": "https://claude.ai/artifact/4pNcrkUY6LMogfqw9BUHHu",
+    "docSlug": "/docs/bai-hoc/buoi-06-2026-10-14",
+    "type": "artifact",
+    "category": "Vận mẫu ü & Văn học",
+    "tags": ["Họ vần ü", "16 từ vựng", "Thơ Tĩnh Dạ Tứ", "Audio cô đọc"],
+    "description": "Họ vần ü (ü, üe, üan, ün), quy tắc bỏ hai chấm khi đi với j, q, x, y; bảng 16 từ vựng then chốt và bài thơ kinh điển 'Tĩnh Dạ Tứ' (静夜思) có audio cô đọc mẫu.",
+    "highlights": [
+      "Quy tắc bỏ 2 dấu chấm trên đầu chữ ü khi đi với j, q, x, y",
+      "Bảng 16 từ vựng theo slide bài học",
+      "Bài thơ 'Tĩnh Dạ Tứ' (静夜思 - Lý Bạch) kèm Pinyin và giọng đọc mẫu"
+    ]
+  },
+  {
+    "id": "buoi-07",
+    "lessonNumber": 7,
+    "title": "Bài giảng ngày 16/10",
+    "date": "2026-10-16",
+    "displayDate": "16/10/2026",
+    "sender": "Nguyen Hieu",
+    "url": "https://claude.ai/artifact/5wtjXqQGmPKyCJGhDCp1Fy",
+    "docSlug": "/docs/bai-hoc/buoi-07-2026-10-16",
+    "type": "artifact",
+    "category": "Vận mẫu mũi",
+    "tags": ["Vận mẫu mũi an en in", "Mũi trước vs Mũi sau", "Luyện âm"],
+    "description": "Phân biệt và luyện tập toàn diện nhóm vận mẫu mũi trước (an, en, in, un, ün) và mũi sau (ang, eng, ing, ong), sửa tật nói ngọng âm mũi.",
+    "highlights": [
+      "Khẩu hình và vị trí thoát hơi của vận mẫu mũi trước vs mũi sau",
+      "Bảng ghép âm mũi toàn diện",
+      "Bài tập nghe và nhận diện phiên âm chính xác"
+    ]
+  },
+  {
+    "id": "buoi-08",
+    "lessonNumber": 8,
+    "title": "Bài giảng ngày 19/10 – Thanh nhẹ, âm cuốn lưỡi & Chữ 不",
+    "date": "2026-10-19",
+    "displayDate": "19/10/2026",
+    "sender": "Nguyen Hieu",
+    "url": "https://claude.ai/artifact/KxeRYBoFErXfTNq7q482zQ",
+    "docSlug": "/docs/bai-hoc/buoi-08-2026-10-19",
+    "type": "artifact",
+    "category": "Thanh nhẹ & Biến điệu",
+    "tags": ["Thanh nhẹ", "Âm cuốn lưỡi er/r", "Biến điệu chữ 不", "Nghe - viết"],
+    "description": "Thanh nhẹ (khinh thanh), âm cuốn lưỡi er/r, ba bảng luyện đọc chuyên sâu, quy tắc biến điệu chữ 不 (bù / bú) và bài tập nghe - viết có giọng cô bấm nghe.",
+    "highlights": [
+      "Khái niệm thanh nhẹ và cách đọc nhẹ, ngắn, dứt khoát",
+      "Kỹ thuật cuốn lưỡi âm er (nhi hóa)",
+      "Quy tắc biến điệu chữ '不' (đứng trước thanh 4 đổi thành bú)",
+      "3 bảng luyện đọc kèm audio bấm nghe trực tiếp"
+    ]
+  },
+  {
+    "id": "buoi-09",
+    "lessonNumber": 9,
+    "title": "Bài giảng ngày 21/10 – Biến điệu 一 & Giao tiếp căn bản",
+    "date": "2026-10-21",
+    "displayDate": "21/10/2026",
+    "sender": "Nguyen Hieu",
+    "url": "https://claude.ai/artifact/WeNwDgu2M3d4FeLn8bDQHV",
+    "docSlug": "/docs/bai-hoc/buoi-09-2026-10-21",
+    "type": "artifact",
+    "category": "Biến điệu & Ngữ pháp",
+    "tags": ["Biến điệu chữ 一", "Đại từ nhân xưng", "Câu hỏi 吗", "Hội thoại"],
+    "description": "Quy tắc biến điệu số 1 chữ 一 (yī / yí / yì), đại từ nhân xưng ngôi thứ, mẫu câu nghi vấn với trợ từ 吗 và hội thoại giới thiệu bản thân.",
+    "highlights": [
+      "3 quy tắc biến điệu của chữ '一' (yī, yí trước thanh 4, yì trước thanh 1,2,3)",
+      "Đại từ nhân xưng: 我 (wǒ), 你 (nǐ), 他 (tā), 她 (tā), 我们 (wǒmen)",
+      "Mẫu câu giao tiếp hỏi đáp và luyện tập theo cặp"
+    ]
+  },
+  {
+    "id": "buoi-10",
+    "lessonNumber": 10,
+    "title": "Bài giảng ngày 23/10 – Tổng kết Ngữ âm & Chữ Hán",
+    "date": "2026-10-23",
+    "displayDate": "23/10/2026",
+    "sender": "Nguyen Hieu",
+    "url": "https://claude.ai/artifact/LE2fBN1RuBSXBZSA1htPdt",
+    "docSlug": "/docs/bai-hoc/buoi-10-2026-10-23",
+    "type": "artifact",
+    "category": "Hán tự & Tổng kết",
+    "tags": ["Tổng kết ngữ âm", "Cấu tạo chữ Hán", "Quy tắc bút thuận"],
+    "description": "Tổng kết toàn bộ hệ thống phát âm tiếng Trung Quốc, chuyển tiếp sang cấu trúc chữ Hán, 8 nét cơ bản và 7 quy tắc bút thuận viết chữ Hán.",
+    "highlights": [
+      "Bức tranh toàn cảnh hệ thống ngữ âm Pinyin tiếng Hán",
+      "Các nét căn bản cấu thành Hán tự: ngang, sổ, phẩy, mác, chấm, hất, gập, móc",
+      "7 quy tắc bút thuận viết chữ Hán đúng chuẩn và đẹp mắt"
+    ]
+  }
+]

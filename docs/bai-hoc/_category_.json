@@ -1,0 +1,8 @@
+{
+  "label": "📚 Các Buổi Học Tiếng Trung",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Tổng hợp các bài giảng, biên bản buổi học và tài liệu Claude Artifact theo từng ngày."
+  }
+}

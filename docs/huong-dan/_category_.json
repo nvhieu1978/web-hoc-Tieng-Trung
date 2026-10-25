@@ -1,0 +1,8 @@
+{
+  "label": "📖 Hướng Dẫn & Quản Trị",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Hướng dẫn cập nhật thêm bài học mới và triển khai website lên GitHub, Vercel."
+  }
+}

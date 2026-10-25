@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="gradRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dc2626" />
+      <stop offset="100%" stop-color="#991b1b" />
+    </linearGradient>
+    <linearGradient id="gradGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#7f1d1d" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Outer Circle -->
+  <circle cx="60" cy="60" r="54" fill="url(#gradRed)" filter="url(#shadow)" stroke="#fbbf24" stroke-width="2.5" />
+  
+  <!-- Subtle decorative inner ring -->
+  <circle cx="60" cy="60" r="48" fill="none" stroke="#fef08a" stroke-width="0.8" stroke-dasharray="3,3" opacity="0.6" />
+
+  <!-- Hanzi Character '中' in Gold/White -->
+  <!-- Box part of 中 -->
+  <rect x="36" y="44" width="48" height="32" rx="4" fill="none" stroke="#ffffff" stroke-width="7" stroke-linejoin="round" />
+  <!-- Center vertical sword stroke -->
+  <line x1="60" y1="22" x2="60" y2="98" stroke="url(#gradGold)" stroke-width="7" stroke-linecap="round" />
+</svg>
