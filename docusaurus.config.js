@@ -10,8 +10,8 @@ const config = {
   url: 'https://tieng-trung-course.vercel.app',
   baseUrl: '/',
 
-  organizationName: 'tieng-trung',
-  projectName: 'tieng-trung-course',
+  organizationName: 'nvhieu1978',
+  projectName: 'web-hoc-Tieng-Trung',
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
