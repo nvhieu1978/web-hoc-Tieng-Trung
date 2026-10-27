@@ -54,6 +54,7 @@ Trang web này được xây dựng nhằm mục đích lưu trữ, hệ thống
 | **08** | 19/10/2026 | Thanh nhẹ, âm cuốn lưỡi er/r, 3 bảng luyện đọc, biến điệu 不 | Nguyen Hieu | [Xem buổi 08](/docs/bai-hoc/buoi-08-2026-10-19) |
 | **09** | 21/10/2026 | Biến điệu chữ 一 (yī/yí/yì), đại từ nhân xưng, câu hỏi 吗 | Nguyen Hieu | [Xem buổi 09](/docs/bai-hoc/buoi-09-2026-10-21) |
 | **10** | 23/10/2026 | Tổng kết toàn diện ngữ âm Pinyin, cấu tạo chữ Hán & bút thuận | Nguyen Hieu | [Xem buổi 10](/docs/bai-hoc/buoi-10-2026-10-23) |
+| **11** | 26/10/2026 | 10 nét biến thể chữ Hán mới, cấu trúc câu hỏi 什么, 多少, 吗, 有没有 | Nguyen Hieu | [Xem buổi 11](/docs/bai-hoc/buoi-11-2026-10-26) |
 
 ---
 

@@ -8,7 +8,7 @@ Dự án được xây dựng trên nền tảng **Docusaurus 3**, hỗ trợ đ
 
 ## 🌟 Tính Năng Nổi Bật
 
-- **10 Bài Giảng Tương Tác**: Tích hợp các liên kết Claude Artifact với trình xem trực quan, nút mở toàn màn hình, nút copy link và tóm tắt trọng tâm từng buổi.
+- **11 Bài Giảng Tương Tác**: Tích hợp các liên kết Claude Artifact với trình xem trực quan, nút mở toàn màn hình, nút copy link và tóm tắt trọng tâm từng buổi.
 - **Bảng Ghép Pinyin Thông Minh**: Tích hợp ma trận 21 thanh mẫu x 36 vận mẫu kèm phát âm chuẩn (chạy offline & online).
 - **Cẩm Nang Nhập Môn Ngữ Âm**: Hướng dẫn khẩu hình miệng, luồng hơi, 4 thanh điệu và quy tắc biến âm.
 - **Kho Tài Liệu Google Drive**: Lưu trữ audio giọng đọc mẫu, slide PPTX/PDF và bài tập thực hành.
@@ -30,7 +30,8 @@ Dự án được xây dựng trên nền tảng **Docusaurus 3**, hỗ trợ đ
 | **07** | 16/10/2026 | Nguyen Hieu | [Bài giảng 16/10 – Quy tắc biến điệu](https://claude.ai/artifact/5wtjXqQGmPKyCJGhDCp1Fy) |
 | **08** | 19/10/2026 | Nguyen Hieu | [Bài giảng 19/10 – Chào hỏi & Xưng hô](https://claude.ai/artifact/KxeRYBoFErXfTNq7q482zQ) |
 | **09** | 21/10/2026 | Nguyen Hieu | [Bài giảng 21/10 – Số đếm & Mua sắm](https://claude.ai/artifact/WeNwDgu2M3d4FeLn8bDQHV) |
-| **10** | 23/10/2026 | Nguyen Hieu | [Bài giảng 23/10 – Thời gian & Lịch trình](https://claude.ai/artifact/LE2fBN1RuBSXBZSA1htPdt) |
+| **10** | 23/10/2026 | Nguyen Hieu | [Bài giảng 23/10 – Quy tắc bút thuận](https://claude.ai/artifact/LE2fBN1RuBSXBZSA1htPdt) |
+| **11** | 26/10/2026 | Nguyen Hieu | [Bài giảng 26/10 – 10 Nét biến thể & Các dạng câu hỏi](https://claude.ai/artifact/RTrF1WjJakmQKjswtp14YE) |
 
 **Kho tài nguyên hỗ trợ:**
 - 📁 **Google Drive**: [Thư mục tài liệu âm thanh & slide](https://drive.google.com/drive/folders/1yjQMxQlCPsm-2W-N1D743mrFfIfQRGz9?usp=sharing)
