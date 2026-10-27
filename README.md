@@ -8,7 +8,7 @@ Dự án được xây dựng trên nền tảng **Docusaurus 3**, hỗ trợ đ
 
 ## 🌟 Tính Năng Nổi Bật
 
-- **11 Bài Giảng Tương Tác**: Tích hợp các liên kết Claude Artifact với trình xem trực quan, nút mở toàn màn hình, nút copy link và tóm tắt trọng tâm từng buổi.
+- **11 Bài Giảng Tương Tác**: Tích hợp các liên kết Claude Artifact với trình xem trực quan, nút mở cửa sổ popup riêng biệt (không bị chặn `X-Frame-Options`), nút mở toàn màn hình, nút copy link và tóm tắt trọng tâm từng buổi.
 - **Bảng Ghép Pinyin Thông Minh**: Tích hợp ma trận 21 thanh mẫu x 36 vận mẫu kèm phát âm chuẩn (chạy offline & online).
 - **Cẩm Nang Nhập Môn Ngữ Âm**: Hướng dẫn khẩu hình miệng, luồng hơi, 4 thanh điệu và quy tắc biến âm.
 - **Kho Tài Liệu Google Drive**: Lưu trữ audio giọng đọc mẫu, slide PPTX/PDF và bài tập thực hành.
@@ -72,24 +72,87 @@ Bạn có thể thêm bài học mới theo 1 trong 2 cách:
 
 ---
 
-## 🚀 Đẩy Lên GitHub & Deploy Miễn Phí Lên Vercel
+## 🚀 Hướng Dẫn Triển Khai (Deploy) Lên Vercel & GitHub
 
-### Bước 1: Đẩy mã nguồn lên GitHub
+### ⚙️ Bước 0: Thiết lập Git Email chuẩn xác (Tránh lỗi Vercel chặn)
+Vercel kiểm tra email trong commit phải trùng với email tài khoản GitHub của bạn:
 ```bash
-git init
-git add .
-git commit -m "feat: website hoc tieng trung voi 10 bai hoc va cong cu pinyin"
-git branch -M main
-git remote add origin https://github.com/<USERNAME>/<TEN_REPO>.git
-git push -u origin main
+git config user.name "Nguyen Van Hieu"
+git config user.email "nvhieu1978@gmail.com"
 ```
 
-### Bước 2: Liên kết với Vercel
-1. Đăng nhập [vercel.com](https://vercel.com) bằng tài khoản GitHub.
-2. Chọn **"Add New..."** -> **"Project"** -> chọn repo vừa tạo.
-3. Vercel tự động nhận diện cấu hình Docusaurus:
-   - **Framework Preset**: `Docusaurus 2` (hoặc `Other`)
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `build`
-4. Bấm **Deploy**. Sau ~40 giây website của bạn sẽ hoạt động trực tiếp trên toàn cầu!
-5. Mỗi lần bạn `git push` bài học mới lên GitHub, Vercel sẽ tự động cập nhật ngay lập tức.
+---
+
+### 🌟 Cách 1: Deploy trực tiếp bằng Vercel CLI (Khuyên dùng - Nhanh & Độc lập)
+
+Đây là cách đơn giản nhất để tạo một website mới toanh, độc lập 100% mà không sợ xung đột hay lỗi quyền GitHub:
+
+#### Bước 1: Đăng nhập Vercel (chỉ làm lần đầu)
+```bash
+npx vercel login
+```
+*Chọn `Continue with GitHub` ➔ Bấm xác nhận trên trình duyệt.*
+
+#### Bước 2: Chạy lệnh Deploy Production
+```bash
+npx vercel --prod
+```
+
+#### Bước 3: Trả lời các câu hỏi trong Terminal (Rất quan trọng):
+* `? Which project?`: **Gõ tên project mới:** `web-hoc-tieng-trung` rồi bấm **Enter**.  
+  *(⚠️ TUYỆT ĐỐI KHÔNG chọn project cũ như `website` để tránh bị đè nhầm domain `cardano2vn.io`)*.
+* `? Project not found. Do you want to create a new project "web-hoc-tieng-trung"?`: Bấm **Enter (Y)** để tạo mới.
+* `? In which directory is your code located?`: Bấm **Enter** (để `./`).
+* `? Want to modify these settings?`: Bấm **Enter (N)**.
+
+➔ **Xong!** Vercel sẽ tự động build và trả về đường link website chính thức dạng:
+👉 **`https://web-hoc-tieng-trung.vercel.app`**
+
+---
+
+### 🌐 Cách 2: Deploy qua giao diện Web Vercel (kết nối GitHub)
+
+Nếu bạn muốn Vercel tự động build mỗi khi `git push`:
+
+1. **Cấp quyền GitHub App**: Vào **https://github.com/apps/vercel/installations/new** ➔ Chọn tài khoản `nvhieu1978` ➔ Tích chọn **All repositories** ➔ Bấm **Save / Install**.
+2. **Import trên Vercel**:
+   - Truy cập **https://vercel.com/new**.
+   - Dán đầy đủ đường link: `https://github.com/nvhieu1978/web-hoc-Tieng-Trung`
+   - Tại ô **Project Name**: Đặt là `web-hoc-tieng-trung`.
+   - Bấm **Deploy**.
+3. Mỗi khi có bài học mới, chỉ cần chạy lệnh sau trên máy:
+   ```bash
+   git add .
+   git commit -m "feat: cap nhat bai giang moi"
+   git push origin main
+   ```
+   Vercel sẽ tự động cập nhật website sau 1 phút!
+
+---
+
+### 🏷️ Cách Đổi Tên Miền (Custom Domain) Theo Ý Muốn
+1. Vào [vercel.com/dashboard](https://vercel.com/dashboard) ➔ Bấm vào project `web-hoc-tieng-trung`.
+2. Vào **Settings** ➔ Chọn **Domains** ở cột bên trái.
+3. Gõ tên miền bạn thích (ví dụ `tieng-trung-hieu.vercel.app` hoặc domain riêng `.com`, `.vn`) ➔ Bấm **Add**.
+
+---
+
+### 🆘 Xử Lý Sự Cố Thường Gặp
+
+#### 1. Lỡ chọn nhầm Project và bị đè tên miền khác (ví dụ `cardano2vn.io`):
+- **Khôi phục domain cũ ngay lập tức**: Vào Vercel Dashboard ➔ Chọn project bị đè ➔ Tab **Deployments** ➔ Tìm bản deploy cũ ➔ Bấm `...` ➔ Chọn **Promote to Production**. Tên miền cũ sẽ phục hồi sau 5 giây!
+- **Gỡ liên kết nhầm trong máy**: Chạy lệnh `rm -rf .vercel .env.local` rồi chạy lại `npx vercel --prod` để đặt tên project mới.
+
+#### 2. Lỗi `Deployment Blocked` (Email commit không khớp GitHub):
+- Chạy lệnh cập nhật email và push đè:
+  ```bash
+  git config user.email "nvhieu1978@gmail.com"
+  git push origin main --force
+  ```
+
+#### 3. Phương án dự phòng: Deploy lên GitHub Pages (Miễn phí 100%)
+Nếu không muốn dùng Vercel, bạn có thể deploy lên GitHub Pages với 1 lệnh duy nhất:
+```bash
+GIT_USER=nvhieu1978 npm run deploy
+```
+Website sẽ hoạt động tại: `https://nvhieu1978.github.io/web-hoc-Tieng-Trung/`
